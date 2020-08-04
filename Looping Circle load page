@@ -1,0 +1,28 @@
+      body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+      }
+
+      .spinner {
+          border: 8px solid rgba(0, 0, 0, .1);
+          border-left-color: rgb(102,153,255);
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+          to { transform: rotate(360deg); }
+      }
+
+
+  <div class="spinner"></div>
+
+  <script>
+    setTimeout(function() {
+    window.location.href = "visual.php";
+}, 5000);
+</script>
